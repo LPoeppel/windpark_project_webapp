@@ -21,27 +21,32 @@ Projekt-Bedienung im Jenkins:
     http://robert-magnus.de:8035/api/shutdown
 
 Dokumentation:
-    <details>
+   <details>
+    <summary>Projekt richtig kompilieren</summary>
+    Text
+    </details>
+
+   <details>
     <summary>Projekt richtig kompilieren</summary>
     > Text
     </details>  
     
-    <details>
+   <details>
     <summary>APIs</summary>
     > Text
     </details>  
 
-    <details>
+   <details>
     <summary>Lizenzen</summary>
     > Text
     </details>  
 
-    <details>
+   <details>
     <summary>Komponentenarchitektur</summary>
     > Text
     </details> 
 
-    <details>
+   <details>
     <summary>Systemarchitektur</summary>
     > Text
     </details> Systemarchitektur
