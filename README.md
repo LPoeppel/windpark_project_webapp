@@ -23,11 +23,6 @@ Projekt-Bedienung im Jenkins:
 Dokumentation:
    <details>
     <summary>Projekt richtig kompilieren</summary>
-    Text
-    </details>
-
-   <details>
-    <summary>Projekt richtig kompilieren</summary>
     > Text
     </details>  
     
