@@ -1,7 +1,5 @@
 
-Home
-
-cover
+![LOGO](http://url/to/img.png)
 
 Herzlich willkommen im Wiki von teamTrivial
 
