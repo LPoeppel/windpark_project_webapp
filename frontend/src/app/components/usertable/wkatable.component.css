@@ -1,0 +1,99 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+  }
+
+mat-grid-tile {
+    background: white;
+    vertical-align: top;
+    margin: 0;
+    
+  }
+
+  .wkatable
+  {
+      
+     margin-top: 0;
+     margin-bottom: 10%;
+     height:90%;
+     width:90%;
+     overflow: scroll;
+     position: absolute;
+     left: 30px;
+     top: 70px;
+     
+  }
+  
+.search
+{
+  width: 90%;
+  position: absolute;
+  left: 30px;
+  top:10px;
+}
+table {
+    width: 100%;   
+  
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+   
+   
+  }
+  
+  td, th {
+    width: 25%;
+  }
+  tr.detail-row {
+    height: 0;
+  }
+  
+  tr.element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.element-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+
+ .element-hidden
+ {
+  padding: 16px;
+ }
+ .element-hidden-header
+ {
+  size: 11px;
+  font-weight: 500;
+  color: #666666;
+ }
+
+
+ li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+}
+
+  .mat-paginator-sticky {
+    bottom: 0px;
+    position: sticky;
+    z-index: 10;
+  }
+  .basic-container {
+    
+    padding: 0px;   
+
+  }

@@ -1,0 +1,9 @@
+/backend/out
+/backend/node_modules
+/fronend/node_modules
+.scannerwork
+/backend/.scannerwork
+/backend/coverage
+/backend/.nyc-output/**
+/frontend/reports
+/frontend/coverage

@@ -1,0 +1,22 @@
+<div class="dateinput">
+  <mat-form-field class="example-form-field">
+    <mat-label>Zeitraum</mat-label>
+    <input matInput type="date" value="2015-01-01" [formControl]="form_startdate">
+
+  </mat-form-field>
+  &nbsp;&nbsp;<mat-form-field class="example-form-field">
+    <input matInput type="date" value="2020-01-01" [formControl]="form_enddate">
+  </mat-form-field>
+
+  &nbsp;&nbsp;&nbsp;<button mat-raised-button color="primary" (click)="update()">Übernehmen</button>
+</div>
+
+
+
+
+<piechart [startdate]="startdate_api" [enddate]="enddate_api">loading...</piechart>
+<linechart [startdate]="startdate_api" [enddate]="enddate_api">loading..</linechart>
+<scatterchart [startdate]="startdate_api" [enddate]="enddate_api">loading..</scatterchart>
+<barchart [startdate]="startdate_api" [enddate]="enddate_api">loading..</barchart>
+<boxplot [startdate]="startdate_api" [enddate]="enddate_api">loading..</boxplot>
+<linechart5 [startdate]="startdate_api" [enddate]="enddate_api"> loading..</linechart5>

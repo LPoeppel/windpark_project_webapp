@@ -1,0 +1,124 @@
+<div class="search">
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" #input>
+  </mat-form-field>
+
+</div>
+
+
+
+<div class=wkatable>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort multiTemplateDataRows>
+
+
+    <ng-container matColumnDef="Bst_Name,C,120">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Betreiber </th>
+      <td mat-cell *matCellDef="let element"> {{element["Bst_Name,C,120"]}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="PLZ,C,5">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> PLZ </th>
+      <td mat-cell *matCellDef="let element"> {{element["PLZ,C,5"]}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Ort,C,254">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Ort </th>
+      <td mat-cell *matCellDef="let element"> {{element["Ort,C,254"]}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Anl_Nr,C,9">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Anlagen Nr </th>
+      <td mat-cell *matCellDef="let element"> {{element["Anl_Nr,C,9"]}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="Leistung,N,13,3">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Leistung (in MW) </th>
+      <td mat-cell *matCellDef="let element"> {{element["Leistung,N,13,3"]}} </td>
+    </ng-container>
+
+
+
+    <ng-container matColumnDef="Status,C,20">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+      <td mat-cell *matCellDef="let element"> {{element["Status,C,20"]}} </td>
+    </ng-container>
+
+    <!-- Expanded Content  -->
+    <ng-container matColumnDef="expandedDetail">
+      <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
+        <div class="element-detail" [@detailExpand]="(element == expandedElement) ? 'expanded' : 'collapsed'">
+
+
+          <div class="element-hidden">
+            <div class="element-hidden-header">
+              Anlagen Bezeichner
+            </div>
+            {{element["Anl_Bez,C,60"]}}
+
+            <div class="element-hidden-header">
+              <br>WKA ID
+            </div>
+            {{element["Wka_ID,C,15"]}}
+
+
+            <div class="element-hidden-header">
+              <br>Bst Nr
+            </div>
+            {{element["Bst_Nr,C,11"]}}
+
+
+            <div class="element-hidden-header">
+              <br>Genehmigt
+            </div>
+            {{element["Genehmigt,D"]}}
+
+            <div class="element-hidden-header">
+              <br>Inbetriebnahme
+            </div>
+            {{element["Inbetriebn,D"]}}
+
+            <div class="element-hidden-header">
+              <br>Kreis
+            </div>
+            {{element["Kreis,C,40"]}}
+
+            <div class="element-hidden-header">
+              <br>Gemeinde Kennung
+            </div>
+            {{element["Geme_Kenn,C,8"]}}
+
+            <div class="element-hidden-header">
+              <br>Naben Hoehe
+            </div>
+            {{element["Nabenhoehe,N,11,2"]}} Meter
+
+            <div class="element-hidden-header">
+              <br>Rotor Durchmesser
+            </div>
+            {{element["Rotordurch,N,11,2"]}} Meter
+
+
+          </div>
+        </div>
+
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns sticky: true"></tr>
+    <tr mat-row *matRowDef="let element; columns: displayedColumns;" class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element" (click)="addNewLat(element.Latitude)"
+      (click)="addNewLng(element.Longitude)">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">Keine Uebereinstimmung mit "{{input.value}}"</td>
+    </tr>
+
+
+  </table>
+  <mat-paginator [pageSizeOptions]="[20, 50, 100]" showFirstLastButtons class="mat-paginator-sticky"></mat-paginator>
+</div>

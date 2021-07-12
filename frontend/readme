@@ -1,0 +1,19 @@
+28.11.2020
++ Datumsauswahl für die Karte eingefügt.
++ Api calls für die Karte und die Tabelle wurden mit Attributen erweitert :
+Table_Marker API 'Genehmigt' : /api/power?until=2020-01-01&from=2010-01-01&filterProperty=Genehmigt
+Table_Marker API 'inBetrieb' : /api/power?until=2020-01-01&from=2010-01-01&filterProperty=inBetrieb
+
+Die Aufrufe werden auch in der console gelogt.
+Die onUpdate() funktion ist für die Datumsauswahl der Karte/Tabelle noch nicht implementiert, aber der protoyp steht schon. Werde das machen sobald die API*s stehen um besser testen zu können.
+
+
+Full-Power-API / Verfügbare gesamtleistung : 
+/api/full-power?until=2020-01-01&from=2010-01-02&filterProperty=Inbetriebn,D
+/api/full-power?until=2020-01-01&from=2010-01-02&filterProperty=Genehmigt,D
+
+- hier steht bereits die onUpdate() funktion.
+- werden onInit() doppelt gecallt aber das fixe ich noch.
+
+29.11.2020
+

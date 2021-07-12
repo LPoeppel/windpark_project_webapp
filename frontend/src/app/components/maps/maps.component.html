@@ -1,0 +1,25 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="true"
+    [fullscreenControl]="true">
+
+    <agm-marker-cluster [maxZoom]=11 [zoomOnClick]="true" [gridSize]="gridsize" [ignoreHidden]="ignorehidden" imagePath="/teamtrivial/images/m">
+        <agm-marker *ngFor="let m of marker;" [latitude]="m.lat" [longitude]="m.lng" [title]="m.betreiber"
+            [visible]="m.visible" [markerDraggable]="m.draggable"
+            (markerClick)="addNewItem(m.wkainfo); passcoordinates(m.lat,m.lng) ">
+
+
+            <agm-info-window>
+                <h2>{{ m.betreiber }}</h2>
+                WKA ID: {{m.wkainfo}}
+                <br>{{m.address}}
+                <br><br>Status: {{m.status}}
+                <br>Leistung: {{m.leistung}} MW
+            </agm-info-window>
+        </agm-marker>
+
+    </agm-marker-cluster>
+
+    <agm-circle [latitude]="lat" [longitude]="lng" [radius]="radius" [fillColor]="fillcolor" [circleDraggable]="false"
+        [editable]="false">
+    </agm-circle>
+
+</agm-map>
