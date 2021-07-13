@@ -1,5 +1,5 @@
 
-![LOGO](/documentation/images/component.png)
+![LOGO](/documentation/images/cover.png)
 
 Herzlich willkommen im Wiki von teamTrivial
 
@@ -38,12 +38,12 @@ Dokumentation:
 
    <details>
     <summary>Komponentenarchitektur</summary>
-    > Text
+    ![Komponenten](/documentation/images/component.png)
     </details> 
 
    <details>
     <summary>Systemarchitektur</summary>
-    > Text
+    ![System](/documentation/images/system.png)
     </details> Systemarchitektur
 
 Sprintprotokolle / Abschlusspräsentation :
