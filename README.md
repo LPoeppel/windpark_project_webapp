@@ -1,5 +1,5 @@
 
-![LOGO](http://url/to/img.png)
+![LOGO](/documentation/images/component.png)
 
 Herzlich willkommen im Wiki von teamTrivial
 
