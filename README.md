@@ -77,7 +77,69 @@ URL: http://localhost:8035/api/average-built-duration?until=2020-01-01&from=2015
 
    <details>
     <summary>Lizenzen</summary>
-    > Text
+    
+BACKEND:
+
+ISCL:
+
+nyc: 15.1.0,
+should: ^13.2.3,
+MIT:
+
+NodeJS
+@types/express: 4.17.8,
+@types/mongoose: 5.10.0,
+@types/should: 13.0.0,
+@types/supertest: 2.0.10,
+body-parser: 1.19.0,
+chai-http: 4.3.0,
+express: 4.17.1,
+mongoose: 5.10.18,
+@types/chai: 4.2.14,
+@types/mocha: 8.0.4,
+chai: 4.2.0,
+express-basic-auth: 1.2.0,
+mocha: 8.2.1,
+mocha-sonarqube-reporter: 1.0.2,
+should: 13.2.3,
+should-http: 0.1.1,
+sonar-scanner: 3.1.0,
+supertest: 6.0.1,
+ts-node: 8.3.0,
+BSD-2-Clause:
+
+dotenv: 8.2.0,
+Apache-2.0 - License
+
+typescript: 4.0.3
+FRONTEND
+
+MIT
+
+@agm/*
+@Angular
+@arin-pang-agm
+@types/*
+ts-node
+karma
+jasmine
+codelyzer
+snazzy-info-window
+resize-observer-polyfill
+sonar-scanner
+zone.js
+protactor
+Apache-2.0
+
+@tslint
+@typescript
+google
+rxjs
+echarts
+puppeteer
+BSD
+
+tslib
     </details>  
 
    <details>
